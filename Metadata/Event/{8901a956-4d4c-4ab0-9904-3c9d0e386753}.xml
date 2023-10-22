@@ -74,7 +74,7 @@
 			<destination>{3b2e5bc5-a8fd-48fb-a7a6-070a9111dab2}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{709b979d-0f78-4893-831e-6eac86e7bbd5}</destination>
+			<destination>{0751e0fe-f977-4e33-be12-75fc87556fc6}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{bf1de748-b75c-4c56-9439-03ccd0163772}</destination>
@@ -93,8 +93,8 @@
 	</object>
 	<object class="Timeline" id="{95de41b4-0043-4672-8b41-16a09d62f30f}">
 		<relationship name="modules">
-			<destination>{709b979d-0f78-4893-831e-6eac86e7bbd5}</destination>
 			<destination>{9d5ef67d-9f68-4584-b195-92a135764139}</destination>
+			<destination>{0751e0fe-f977-4e33-be12-75fc87556fc6}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{4a2c4268-24b5-4724-ba85-699d6ccce8c5}">
@@ -119,15 +119,15 @@
 			<destination>{0dac0274-f4f3-4492-bb19-db7148571128}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{709b979d-0f78-4893-831e-6eac86e7bbd5}">
+	<object class="SingleSound" id="{0751e0fe-f977-4e33-be12-75fc87556fc6}">
 		<property name="length">
-			<value>1.2</value>
+			<value>1.3040816326530609</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{04c0b6ec-34e0-48d2-9c7d-010f44f893e0}</destination>
-		</relationship>
+		<property name="timelockedOffset">
+			<value>0.41999999999999998</value>
+		</property>
 		<relationship name="audioFile">
-			<destination>{4c1d7446-9da2-4388-b3b5-33bae029d7f2}</destination>
+			<destination>{97a7550f-6d30-42ff-bc68-fb8c749ad543}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{bf1de748-b75c-4c56-9439-03ccd0163772}">
@@ -191,14 +191,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{f2716177-0c22-4b91-a972-7373e71a4c41}" />
 	<object class="MixerBusFader" id="{d98be881-ec35-4334-a501-ffd6c843b36e}" />
-	<object class="RandomizerModulator" id="{04c0b6ec-34e0-48d2-9c7d-010f44f893e0}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>8.5</value>
-		</property>
-	</object>
 	<object class="Automator" id="{0dac0274-f4f3-4492-bb19-db7148571128}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>
