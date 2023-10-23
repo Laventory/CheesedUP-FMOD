@@ -225,7 +225,7 @@
 			<value>103.40000000000001</value>
 		</property>
 		<property name="length">
-			<value>10.92</value>
+			<value>10.999999999999998</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{7231d315-5e4c-42fa-9109-d83a3550b44d}</destination>
@@ -360,7 +360,7 @@
 	</object>
 	<object class="NamedMarker" id="{b07eac61-84a0-4f34-8c08-eb94872ebf7b}">
 		<property name="position">
-			<value>58.505341573757249</value>
+			<value>60.800000000000004</value>
 		</property>
 		<property name="name">
 			<value>Hurry</value>
@@ -377,7 +377,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>58.505341573757249</value>
+			<value>59.5</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{ccf38336-a856-489d-b951-6d951086a50a}</destination>
@@ -394,13 +394,16 @@
 	</object>
 	<object class="SustainPoint" id="{6d9142c1-15b7-4ca5-b555-5326532ae76a}">
 		<property name="position">
-			<value>114.32000000000001</value>
+			<value>114.40000000000001</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{ccf38336-a856-489d-b951-6d951086a50a}</destination>
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{2256f879-82c8-4c02-bb25-86da90294ca7}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{150ec063-d32d-479b-910e-971c80d580de}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{51a457c7-c155-4a5d-b2f1-4a95101e027e}">
@@ -503,6 +506,17 @@
 	<object class="ParameterCondition" id="{d296e617-26e1-4c87-9add-af3d74c0307b}">
 		<property name="minimum">
 			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{150ec063-d32d-479b-910e-971c80d580de}">
+		<property name="minimum">
+			<value>0</value>
 		</property>
 		<property name="maximum">
 			<value>1</value>
