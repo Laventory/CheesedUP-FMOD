@@ -75,7 +75,6 @@
 	<object class="MarkerTrack" id="{967a5fa4-132e-4f0f-a88a-5ac3169e6583}" />
 	<object class="GroupTrack" id="{1fc2eb04-769f-427f-9b18-334cce459c5e}">
 		<relationship name="modules">
-			<destination>{aea5c194-8386-45ef-ba8d-d3889557c359}</destination>
 			<destination>{d7a70d79-c814-42ed-b66e-c5faf095c63f}</destination>
 			<destination>{d47a61dd-74b2-4840-a622-4360dac8fcb1}</destination>
 			<destination>{33affd26-13e9-42ea-a471-4db6ed580b0c}</destination>
@@ -86,6 +85,7 @@
 			<destination>{a0d7c913-6a18-4348-830e-4236628290ee}</destination>
 			<destination>{302119a0-1cfd-46f9-9d0c-a8e2e6af732c}</destination>
 			<destination>{4582b73d-c1d9-48ea-ab75-35aea9df7800}</destination>
+			<destination>{70169d89-d4fd-4088-b0fe-9ed2eac70d53}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8de879ad-30a9-427e-a97e-a50022b63fae}</destination>
@@ -93,9 +93,9 @@
 	</object>
 	<object class="Timeline" id="{c3c82413-8226-49ed-8156-c3bdf1cbc398}">
 		<relationship name="modules">
-			<destination>{aea5c194-8386-45ef-ba8d-d3889557c359}</destination>
 			<destination>{302119a0-1cfd-46f9-9d0c-a8e2e6af732c}</destination>
 			<destination>{4582b73d-c1d9-48ea-ab75-35aea9df7800}</destination>
+			<destination>{70169d89-d4fd-4088-b0fe-9ed2eac70d53}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{8be0dcf0-497a-404b-acf4-c64c3f2d6552}</destination>
@@ -183,14 +183,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{578220db-e960-44c2-b78d-efa684397a56}" />
-	<object class="SingleSound" id="{aea5c194-8386-45ef-ba8d-d3889557c359}">
-		<property name="length">
-			<value>165.18674999999999</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{e0dc3921-15b3-4bd8-b7cb-8458e700c7aa}</destination>
-		</relationship>
-	</object>
 	<object class="TransitionSourceSound" id="{d7a70d79-c814-42ed-b66e-c5faf095c63f}">
 		<property name="length">
 			<value>2</value>
@@ -254,7 +246,7 @@
 	</object>
 	<object class="SingleSound" id="{302119a0-1cfd-46f9-9d0c-a8e2e6af732c}">
 		<property name="start">
-			<value>166.5</value>
+			<value>163.18256157635469</value>
 		</property>
 		<property name="length">
 			<value>99.599999999999994</value>
@@ -272,6 +264,20 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{eead1e93-2619-441d-bb05-94ff13001c3a}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{70169d89-d4fd-4088-b0fe-9ed2eac70d53}">
+		<property name="length">
+			<value>158.23099730458222</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.073002695417789754</value>
+		</property>
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{11a43568-1ab3-498d-8b20-7986ba431e7a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8de879ad-30a9-427e-a97e-a50022b63fae}">
@@ -293,7 +299,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>165.18674999999993</value>
+			<value>158.23099730458222</value>
 		</property>
 		<property name="looping">
 			<value>2</value>
@@ -313,7 +319,7 @@
 	</object>
 	<object class="LoopRegion" id="{33206f4a-da30-4701-9945-9e3a977c44f9}">
 		<property name="position">
-			<value>166.5</value>
+			<value>163.18256157635469</value>
 		</property>
 		<property name="length">
 			<value>99.600000000000023</value>
@@ -359,10 +365,10 @@
 	</object>
 	<object class="LoopRegion" id="{2d28e829-7977-426f-b8d5-52e6e2f3d12b}">
 		<property name="position">
-			<value>0.01</value>
+			<value>8.0125390835579502</value>
 		</property>
 		<property name="length">
-			<value>162.75</value>
+			<value>136.0030425876011</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{c3c82413-8226-49ed-8156-c3bdf1cbc398}</destination>
@@ -390,7 +396,7 @@
 	</object>
 	<object class="LoopRegion" id="{cfbe4f79-0421-424c-b19a-571ac09d7eb3}">
 		<property name="position">
-			<value>173.48251411302408</value>
+			<value>170.16507568937877</value>
 		</property>
 		<property name="length">
 			<value>82.35856784838532</value>
