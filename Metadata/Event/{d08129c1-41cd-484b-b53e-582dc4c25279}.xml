@@ -273,7 +273,10 @@
 			<destination>{0d79c1eb-bc01-42ae-9c5e-638b49268ebf}</destination>
 		</relationship>
 		<relationship name="markerTrack">
-			<destination>{6196c710-5fd6-41a2-9d25-5a3a22145b62}</destination>
+			<destination>{2293eb4b-2edc-4c08-97c5-a7844b3ed316}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{b3387cdf-340b-45e5-a531-722278daf513}</destination>
 		</relationship>
 	</object>
 	<object class="LoopRegion" id="{8fd6f6ac-4558-4c21-bdf3-0a08290ff5db}">
@@ -405,6 +408,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7d2ef552-446a-4ff1-9db2-ee372f131f11}" />
+	<object class="ParameterCondition" id="{b3387cdf-340b-45e5-a531-722278daf513}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterCondition" id="{07e0078a-bf41-428c-a058-cb46ee3d6041}">
 		<property name="minimum">
 			<value>2</value>

@@ -441,6 +441,9 @@
 		<relationship name="markerTrack">
 			<destination>{dfd62b73-5d73-4a4c-925c-10151ea909ad}</destination>
 		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{81cecacf-f8a6-4e4b-bfa3-d93ecc5ee0ac}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{666f7cbf-a9c6-4c28-8f51-24c44004b4d2}">
 		<relationship name="effects">
@@ -624,6 +627,17 @@
 			<destination>{ad4c72c9-e97e-4f9a-8f27-6a8c0ec98d7c}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterCondition" id="{81cecacf-f8a6-4e4b-bfa3-d93ecc5ee0ac}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{2030cede-1464-4369-b337-795c9ba58ca8}" />
 	<object class="ProxyEffect" id="{1fdd5aa5-5377-4412-92e9-6078b8a8ffbf}">
 		<property name="inputFormat">
@@ -755,7 +769,7 @@
 			<value>1</value>
 		</property>
 		<property name="curveShape">
-			<value>0.25471893</value>
+			<value>-0.774982631</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{295fa3b3-fc07-4d1e-9810-5f6fc1d8b185}">
@@ -774,7 +788,7 @@
 			<value>0</value>
 		</property>
 		<property name="curveShape">
-			<value>-0.2547189</value>
+			<value>-1.00000048</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{126e20c3-83af-462a-a903-c46929be6be6}">
