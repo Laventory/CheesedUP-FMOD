@@ -125,6 +125,7 @@
 			<destination>{8150b4a6-13c9-4aed-b9fe-eda55f31d547}</destination>
 			<destination>{14ecaa64-d8a4-42c6-a14a-efa5e224fe99}</destination>
 			<destination>{e8374d89-aba5-4ce3-973b-97e2c1e1d595}</destination>
+			<destination>{5e681dca-20ce-4dff-a16c-8249cd63dca1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{cb570c91-47ff-4d3c-bac9-ad8cff24835d}">
@@ -592,6 +593,23 @@
 			<destination>{e254de61-8140-424c-a855-815b127f11f1}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{5e681dca-20ce-4dff-a16c-8249cd63dca1}">
+		<property name="position">
+			<value>227.42041121996681</value>
+		</property>
+		<property name="length">
+			<value>16.22007881941505</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{f9cfac53-2134-4cb0-ac08-6124edc9bfd3}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{ab1c2df2-17d8-4b66-8105-15734d65b512}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{be6682d4-7ee9-4d89-931e-7c0025f91bb8}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{f6587072-a902-45c1-8051-f6f43f405cb8}">
 		<relationship name="effects">
 			<destination>{6309b7c8-711f-44d4-ad5d-80410d4df08b}</destination>
@@ -848,6 +866,17 @@
 			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterCondition" id="{be6682d4-7ee9-4d89-931e-7c0025f91bb8}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{6309b7c8-711f-44d4-ad5d-80410d4df08b}" />
 	<object class="ProxyEffect" id="{6c9b2702-70b5-4173-a2b0-e28fe8133760}">
 		<property name="inputFormat">
@@ -941,7 +970,7 @@
 			<value>0</value>
 		</property>
 		<property name="curveShape">
-			<value>-0.658441186</value>
+			<value>-1.00000048</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b62727bf-ca5c-46eb-a101-061bfc12125b}">
