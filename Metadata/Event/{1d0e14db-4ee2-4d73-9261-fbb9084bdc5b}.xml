@@ -220,6 +220,7 @@
 		</relationship>
 		<relationship name="triggerConditions">
 			<destination>{6478d416-f2b2-4076-bcf0-23195ccf6eb9}</destination>
+			<destination>{4ed037f3-1942-4d5d-937b-e6226b4eb069}</destination>
 		</relationship>
 	</object>
 	<object class="LoopRegion" id="{a8e53cd6-eb2f-409f-956f-eb75c25d6b11}">
@@ -252,6 +253,9 @@
 		<property name="length">
 			<value>71.459387755102043</value>
 		</property>
+		<property name="triggerConditionMode">
+			<value>1</value>
+		</property>
 		<property name="transitionOffset">
 			<value>1</value>
 		</property>
@@ -266,6 +270,7 @@
 		</relationship>
 		<relationship name="triggerConditions">
 			<destination>{18868501-beba-4e9c-926c-9bc0671cc1c9}</destination>
+			<destination>{153def09-7360-4478-88e0-918b36bb82f6}</destination>
 		</relationship>
 	</object>
 	<object class="LoopRegion" id="{0d973c21-023c-41b8-aa50-b7cd18a93ae4}">
@@ -326,6 +331,17 @@
 			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterCondition" id="{4ed037f3-1942-4d5d-937b-e6226b4eb069}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>0</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{c10ed824-b9ec-44f4-b273-bf393857ae06}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterCondition" id="{89692a90-b8ab-4ac6-ba30-a34fb6276b2f}">
 		<property name="minimum">
 			<value>2</value>
@@ -346,6 +362,17 @@
 		</property>
 		<relationship name="parameter">
 			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{153def09-7360-4478-88e0-918b36bb82f6}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{c10ed824-b9ec-44f4-b273-bf393857ae06}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterCondition" id="{027017d7-8f73-4b23-b9a5-3b96c854daa7}">
