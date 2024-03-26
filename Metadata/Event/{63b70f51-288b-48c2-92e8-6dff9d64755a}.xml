@@ -106,6 +106,10 @@
 		<relationship name="automators">
 			<destination>{896fcff4-1531-464d-931e-bcaf211b70c7}</destination>
 		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{ee26b8d2-e393-4dab-8994-15c9b2cb88cc}</destination>
+			<destination>{aea78204-3760-4222-b72f-452654c38e74}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{dc5300ce-f11a-457d-bc71-0bdcb96995c0}</destination>
 		</relationship>
@@ -140,6 +144,28 @@
 		</property>
 		<relationship name="automationCurves">
 			<destination>{de02c434-4194-418c-8154-8244b23c3913}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{ee26b8d2-e393-4dab-8994-15c9b2cb88cc}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>0</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{c10ed824-b9ec-44f4-b273-bf393857ae06}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{aea78204-3760-4222-b72f-452654c38e74}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>0</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{3cffe264-0cb0-4e46-91a5-3ce229df4a71}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{4dc653d6-0745-454f-a0a1-35766eb4f3d8}">

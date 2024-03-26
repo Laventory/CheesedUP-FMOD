@@ -27,6 +27,7 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{c3577f67-7bc6-405b-bbcf-1a25d8943082}</destination>
+			<destination>{2d778d0b-57d0-43e6-8fd6-3b4f64aceacf}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{4e58c7e5-b715-4f35-8263-38c46275a440}</destination>
@@ -78,6 +79,11 @@
 			<destination>{a656b147-12aa-4dad-a782-93025ac5e5e9}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{2d778d0b-57d0-43e6-8fd6-3b4f64aceacf}">
+		<relationship name="mixerGroup">
+			<destination>{c1cac700-e634-4136-a3a0-6fc4858120d2}</destination>
+		</relationship>
+	</object>
 	<object class="Timeline" id="{4e58c7e5-b715-4f35-8263-38c46275a440}">
 		<relationship name="modules">
 			<destination>{582bde57-148f-47ae-91f7-8573f2ba8d37}</destination>
@@ -117,7 +123,7 @@
 	</object>
 	<object class="SingleSound" id="{b862f5af-9442-4e2b-a084-a7f2b029dbab}">
 		<property name="start">
-			<value>1.8461458333333338</value>
+			<value>7</value>
 		</property>
 		<property name="length">
 			<value>1.8461458333333334</value>
@@ -131,7 +137,7 @@
 	</object>
 	<object class="SingleSound" id="{d615ee0f-ac15-45fa-9408-9bbbc377f3f3}">
 		<property name="start">
-			<value>3.6922916666666672</value>
+			<value>9.5</value>
 		</property>
 		<property name="length">
 			<value>84.75</value>
@@ -160,12 +166,32 @@
 			<destination>{0f77188b-54e3-458e-b36b-cb01b6794b0b}</destination>
 		</relationship>
 	</object>
+	<object class="EventMixerGroup" id="{c1cac700-e634-4136-a3a0-6fc4858120d2}">
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<property name="name">
+			<value>Audio 1</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{1fd8aa89-c460-4190-8ade-516e4be0ff59}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{0ac482e7-a4e8-4d39-8847-9b6c9675ddd2}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{0f77188b-54e3-458e-b36b-cb01b6794b0b}</destination>
+		</relationship>
+	</object>
 	<object class="LoopRegion" id="{b97934e1-11dd-4ca7-9934-4397bf5212d1}">
 		<property name="position">
 			<value>0</value>
 		</property>
 		<property name="length">
 			<value>1.8461458333333338</value>
+		</property>
+		<property name="transitionOffset">
+			<value>1</value>
 		</property>
 		<property name="looping">
 			<value>2</value>
@@ -182,7 +208,7 @@
 	</object>
 	<object class="LoopRegion" id="{3c4cec06-78b2-4f7c-bde3-6f209d393a1e}">
 		<property name="position">
-			<value>1.8461458333333338</value>
+			<value>7</value>
 		</property>
 		<property name="length">
 			<value>1.8461458333333334</value>
@@ -202,7 +228,7 @@
 	</object>
 	<object class="LoopRegion" id="{dcafd544-963c-495a-a8e6-45393cbbe62e}">
 		<property name="position">
-			<value>3.6922916666666672</value>
+			<value>9.5</value>
 		</property>
 		<property name="length">
 			<value>84.75</value>
@@ -234,6 +260,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ba359edd-25f4-4884-beda-55110a6719eb}" />
+	<object class="MixerBusEffectChain" id="{1fd8aa89-c460-4190-8ade-516e4be0ff59}">
+		<relationship name="effects">
+			<destination>{f0a22237-63f9-413b-b05d-504bdd4079bf}</destination>
+			<destination>{7a095536-9a0a-49b7-b8fa-5810979ba148}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{0ac482e7-a4e8-4d39-8847-9b6c9675ddd2}" />
 	<object class="ParameterCondition" id="{42b17d1a-cb00-4a52-a49a-c242d40668df}">
 		<property name="minimum">
 			<value>0</value>
@@ -277,4 +310,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{0756c1b1-6389-4c92-a2a6-b4de0389f69e}" />
+	<object class="MixerBusFader" id="{f0a22237-63f9-413b-b05d-504bdd4079bf}" />
+	<object class="ThreeEQEffect" id="{7a095536-9a0a-49b7-b8fa-5810979ba148}">
+		<property name="lowGain">
+			<value>-40</value>
+		</property>
+		<property name="midGain">
+			<value>-7.5</value>
+		</property>
+		<property name="highGain">
+			<value>-37</value>
+		</property>
+		<property name="lowCrossover">
+			<value>1700</value>
+		</property>
+		<property name="highCrossover">
+			<value>2700</value>
+		</property>
+	</object>
 </objects>

@@ -5,7 +5,7 @@
 			<value>throwloop</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{7a2507ec-d1d4-4e41-9164-f19d5d2939ae}</destination>
@@ -130,7 +130,7 @@
 	<object class="MixerBusEffectChain" id="{52d73646-1a01-4aba-9816-a0e282b91911}">
 		<relationship name="effects">
 			<destination>{12afe094-56fe-487e-a8c9-8e0df4459866}</destination>
-			<destination>{b16f0a19-1382-4508-a7a8-74c2c667aa74}</destination>
+			<destination>{e7151952-8bfe-4762-8073-6282f5750b61}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e2d9126d-e705-4f1a-8150-5a712fb9979e}" />
@@ -142,6 +142,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{52bdd725-4859-457c-856c-e4a426528692}" />
 	<object class="MixerBusFader" id="{12afe094-56fe-487e-a8c9-8e0df4459866}" />
-	<object class="PannerEffect" id="{b16f0a19-1382-4508-a7a8-74c2c667aa74}" />
+	<object class="ProxyEffect" id="{e7151952-8bfe-4762-8073-6282f5750b61}">
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="preset">
+			<destination>{544615da-5f6b-4e23-8fe1-24657667d5fd}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{1b383672-91a8-4536-b104-3d0cb44a70ee}" />
 </objects>
