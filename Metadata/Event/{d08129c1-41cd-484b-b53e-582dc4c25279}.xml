@@ -103,6 +103,7 @@
 			<destination>{04eb4906-d8fe-4ebf-9da2-b106710f3971}</destination>
 			<destination>{61c58fa2-33f2-4826-85d5-a04b23329344}</destination>
 			<destination>{ef6d8ba4-d6d4-4071-838b-6eda9de851c3}</destination>
+			<destination>{cc95baec-9bc7-4a2b-8d2d-445e2fdb718f}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{34cfa553-ed36-4f9a-8b8b-80123e52ad61}">
@@ -425,6 +426,27 @@
 			<destination>{7cc6969a-f938-437f-86a4-8d57d05d782d}</destination>
 		</relationship>
 	</object>
+	<object class="TransitionMarker" id="{cc95baec-9bc7-4a2b-8d2d-445e2fdb718f}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="triggerConditionMode">
+			<value>1</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{0d79c1eb-bc01-42ae-9c5e-638b49268ebf}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{7e0b987d-071c-49e4-97ac-24c46acc69f9}</destination>
+		</relationship>
+		<relationship name="destination">
+			<destination>{ec58612d-f451-4b87-9987-bcc42ab76586}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{690f4473-a40f-4a87-b3a8-bd3bb4fc744b}</destination>
+			<destination>{0c4593c0-b574-4b42-9e59-64406a7e1ab9}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{10fc13f3-556e-4727-895f-d77d76f65dfb}">
 		<relationship name="effects">
 			<destination>{367a5ff0-391b-45b0-bb1c-6c25a7825200}</destination>
@@ -574,6 +596,28 @@
 		</property>
 		<relationship name="parameter">
 			<destination>{283b5fa7-5f17-4fab-96a0-bfb3bca94a78}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{690f4473-a40f-4a87-b3a8-bd3bb4fc744b}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{e10ccf92-549d-4d3d-903b-7a4f477e9197}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{0c4593c0-b574-4b42-9e59-64406a7e1ab9}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{10b56e65-427b-4f61-bccc-37a1f89f47ae}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{367a5ff0-391b-45b0-bb1c-6c25a7825200}" />
