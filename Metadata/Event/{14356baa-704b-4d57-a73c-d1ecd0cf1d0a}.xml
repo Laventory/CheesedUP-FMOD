@@ -171,6 +171,9 @@
 		<property name="volume">
 			<value>-8.5</value>
 		</property>
+		<relationship name="triggerConditions">
+			<destination>{e816c2dc-7cfb-402d-bae5-0f10a437a0bf}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{038decbf-9fd9-4ecc-91ca-253dc44836e1}</destination>
 		</relationship>
@@ -214,6 +217,17 @@
 	</object>
 	<object class="MixerBusPanner" id="{d1b564e2-41f9-422d-88bc-dc5b469520c0}" />
 	<object class="ParameterCondition" id="{b517f4c2-d851-4919-a10c-949437fca27e}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{e10ccf92-549d-4d3d-903b-7a4f477e9197}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{e816c2dc-7cfb-402d-bae5-0f10a437a0bf}">
 		<property name="minimum">
 			<value>1</value>
 		</property>
