@@ -116,9 +116,6 @@
 		<property name="timelockedOffset">
 			<value>0.029839836836913883</value>
 		</property>
-		<relationship name="automators">
-			<destination>{7bebb369-0fe6-46b6-87f3-46730f86c367}</destination>
-		</relationship>
 		<relationship name="audioFile">
 			<destination>{d6d6fcb4-77a9-4de5-b6f0-397d717e0f8b}</destination>
 		</relationship>
@@ -220,14 +217,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{555f168e-8122-4ffb-9984-47bb5e9a6961}" />
 	<object class="MixerBusFader" id="{f4c43748-846d-4e8d-9a5d-ec8f49ed1d39}" />
-	<object class="Automator" id="{7bebb369-0fe6-46b6-87f3-46730f86c367}">
-		<property name="nameOfPropertyBeingAutomated">
-			<value>volume</value>
-		</property>
-		<relationship name="automationCurves">
-			<destination>{8beeef02-185f-49dc-9e4f-b4cc54c1bb9d}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{4cdd335c-a1ba-42d7-9bb6-9cdb41ec5ff9}">
 		<relationship name="effects">
 			<destination>{7a587ff7-3d40-4edf-b91f-ce4351e7b1a6}</destination>
@@ -279,30 +268,5 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{3b8593a3-85c7-4435-a503-c18f1c793c81}" />
-	<object class="AutomationCurve" id="{8beeef02-185f-49dc-9e4f-b4cc54c1bb9d}">
-		<relationship name="parameter">
-			<destination>{e10ccf92-549d-4d3d-903b-7a4f477e9197}</destination>
-		</relationship>
-		<relationship name="automationPoints">
-			<destination>{8109d222-33e6-4141-b044-8168d3f90a3f}</destination>
-			<destination>{f18ed0fd-6195-4dc0-9ce4-7a7c50a78724}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{7a587ff7-3d40-4edf-b91f-ce4351e7b1a6}" />
-	<object class="AutomationPoint" id="{8109d222-33e6-4141-b044-8168d3f90a3f}">
-		<property name="position">
-			<value>0</value>
-		</property>
-		<property name="value">
-			<value>-76.6666641</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{f18ed0fd-6195-4dc0-9ce4-7a7c50a78724}">
-		<property name="position">
-			<value>1</value>
-		</property>
-		<property name="value">
-			<value>2.5</value>
-		</property>
-	</object>
 </objects>
